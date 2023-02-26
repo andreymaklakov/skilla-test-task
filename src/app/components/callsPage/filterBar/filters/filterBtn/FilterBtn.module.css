@@ -1,0 +1,27 @@
+.arrow {
+  margin-left: 8px;
+  padding: 0.5px;
+}
+
+.text {
+  color: #899cb1;
+}
+
+.btm_line_text {
+  color: #5e7793;
+  opacity: 0.87;
+}
+
+.activeFilter {
+  color: #005ff8;
+}
+
+.btn_container {
+  display: flex;
+
+  align-items: center;
+}
+
+.openFilter {
+  color: #122945;
+}

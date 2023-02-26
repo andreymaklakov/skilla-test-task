@@ -1,0 +1,125 @@
+.analytics_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 56px;
+
+  position: absolute;
+  width: 594px;
+  height: 34px;
+  left: 296px;
+  top: 14px;
+}
+
+.analytics_item {
+  height: 34px;
+
+  flex: none;
+  flex-grow: 0;
+}
+
+.analytics_item_1 {
+  order: 0;
+}
+
+.analytics_item_2 {
+  order: 1;
+}
+
+.analytics_item_3 {
+  order: 2;
+}
+
+.analytics_text {
+  position: absolute;
+  height: 21px;
+
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #122945;
+}
+
+.analytics_text_1 {
+  left: 0px;
+}
+
+.analytics_text_2 {
+  left: 218px;
+}
+
+.analytics_text_3 {
+  left: 438px;
+}
+
+.analytics_text_green {
+  color: #00a775;
+}
+
+.analytics_text_yellow {
+  color: #ffb800;
+}
+
+.analytics_text_red {
+  color: #ea1a4f;
+}
+
+.bar {
+  position: absolute;
+
+  top: 28px;
+  bottom: 0px;
+  z-index: 1;
+
+  border-radius: 12px 0px 0px 12px;
+}
+
+.green_bar {
+  left: 0px;
+  right: 526px;
+  background: #28a879;
+}
+
+.yellow_bar {
+  left: 218px;
+  right: 309px;
+  background: #ffd500;
+}
+
+.red_bar {
+  left: 438px;
+  right: 78px;
+  background: #ea1a4f;
+}
+
+.bar_empty {
+  position: absolute;
+
+  top: 28px;
+  bottom: 0px;
+
+  background: #dee6f5;
+  border-radius: 12px;
+}
+
+.green_bar_empty {
+  left: 0px;
+  right: 438px;
+}
+
+.yellow_bar_empty {
+  left: 218px;
+  right: 220px;
+}
+
+.red_bar_empty {
+  left: 438px;
+  right: 0px;
+}

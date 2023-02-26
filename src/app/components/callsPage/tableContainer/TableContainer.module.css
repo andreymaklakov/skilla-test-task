@@ -1,0 +1,297 @@
+.container {
+  position: relative;
+
+  background: #ffffff;
+
+  box-shadow: 0px 4px 5px #e9edf3;
+  border-radius: 8px;
+
+  top: 47px;
+
+  padding-left: 40px;
+  padding-top: 3px;
+}
+
+.table_header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+table {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+
+  padding-bottom: 56px;
+}
+
+th {
+  font-weight: 400;
+
+  font-size: 14px;
+  line-height: 14px;
+
+  color: #899cb1;
+
+  padding: 0;
+}
+
+tr {
+  display: flex;
+  gap: 17px;
+}
+
+thead {
+  position: relative;
+  /* border-bottom: 1px solid #eaf0fa; */
+
+  padding-bottom: 21px;
+  padding-top: 21px;
+
+  left: -2px;
+
+  right: 0px;
+}
+
+tbody {
+  position: relative;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+
+  color: #122945;
+
+  right: 0px;
+}
+
+tr:nth-child(n) {
+  text-align: left;
+}
+
+.type {
+  width: 36px;
+}
+.time {
+  width: 72px;
+}
+.worker {
+  width: 111px;
+}
+.call {
+  width: 309px;
+}
+.source {
+  width: 197px;
+}
+.mark {
+  width: 181px;
+}
+.duration {
+  width: 392px;
+  padding-right: 40px;
+  text-align: right;
+}
+
+.table_data {
+  position: relative;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+
+  left: -4px;
+  border-top: 1px solid #eaf0fa;
+  top: -4px;
+
+  cursor: pointer;
+}
+
+.table_data:hover {
+  background: rgba(212, 223, 243, 0.17);
+}
+
+td {
+  display: flex;
+  align-items: center;
+}
+
+.red_fill :first-child {
+  fill: #ea1a4f;
+}
+
+.time_data {
+  padding-left: 5px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+}
+
+.source_data {
+  font-size: 15px;
+  line-height: 21px;
+
+  color: #5e7793;
+}
+
+.error {
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #ea1a4f;
+}
+
+.duration_data {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.yesterday {
+  position: relative;
+  padding-bottom: 19px;
+  padding-top: 35px;
+
+  left: -3px;
+}
+
+.number {
+  position: relative;
+  font-size: 12px;
+  line-height: 12px;
+
+  top: -4px;
+
+  padding-left: 4px;
+
+  color: #899cb1;
+}
+
+.loading {
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #899cb1;
+}
+
+.loading_circle {
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #005ff8;
+  border-top: 0px;
+  border-left: 0px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+audio {
+  width: 352px;
+  height: 48px;
+
+  display: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background: #eaf0fa;
+  border-radius: 48px;
+}
+
+audio::-webkit-media-controls-play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #005ff8;
+  border-left: 16px solid #005ff8;
+  border-bottom: 10px solid #005ff8;
+}
+
+audio::-webkit-media-controls-timeline-container {
+  height: 4px;
+  background-color: #adbfdf;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+audio::-webkit-media-controls-timeline-progress-bar {
+  background-color: #005ff8;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+audio::-webkit-media-controls-time-remaining-display:before {
+  content: "";
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+
+  text-align: right;
+
+  color: #122945;
+}
+
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-toggle-closed-captions-button {
+  display: none;
+}
+audio::-webkit-media-controls-volume-slider-container {
+  display: none;
+}
+audio::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+audio::-webkit-media-controls-speed-selector {
+  display: none;
+}
+
+.loader {
+  display: none;
+}
+
+.table_data:hover audio {
+  display: block;
+}
+
+.table_data:hover .loader {
+  display: flex;
+  align-items: center;
+}
+
+.duration_time {
+  display: block;
+}
+
+.table_data:hover .duration_time {
+  display: none;
+}

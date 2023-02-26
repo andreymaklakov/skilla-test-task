@@ -1,0 +1,9 @@
+.svg_btn_wrapper:hover :nth-child(n) {
+  fill: #005ff8;
+  color: #005ff8;
+}
+
+.svg_btn_wrapper:active :nth-child(n) {
+  fill: #274bc8;
+  color: #274bc8;
+}

@@ -1,0 +1,95 @@
+.date_container {
+  height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.left_arrow {
+  width: 16px;
+  height: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.right_arrow {
+  width: 17px;
+  height: 24px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.date_frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  height: 18px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.date_icon {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.date_text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-align: right;
+
+  color: #005ff8;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.date_filter {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.filter_container {
+  position: absolute;
+
+  right: 0px;
+  top: 32px;
+
+  z-index: 1;
+}
+
+.choose_date {
+  display: flex;
+  align-items: start;
+  color: #122945;
+  opacity: 1;
+
+  margin: 0px;
+}
+
+.calendar {
+  margin-left: 28px;
+}

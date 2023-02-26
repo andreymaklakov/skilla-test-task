@@ -1,0 +1,169 @@
+.profile_container {
+  position: absolute;
+  width: 368px;
+
+  right: 0%;
+  top: 64px;
+
+  z-index: 1;
+
+  background: #ffffff;
+  border: 1px solid #eaf0fa;
+  box-shadow: 4px 16px 50px rgba(129, 135, 163, 0.24);
+  border-radius: 4px;
+}
+
+.profile_wrapper {
+  position: relative;
+  width: 302px;
+  left: 32px;
+  right: 32px;
+}
+
+.profile_name {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0;
+  color: #122945;
+}
+
+.logout_container {
+  position: relative;
+  left: 285px;
+  top: -20px;
+}
+
+.info_text_container {
+  display: flex;
+  text-align: left;
+  margin-top: -15px;
+}
+
+.elipse {
+  margin: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #adbfdf;
+}
+
+.profile_text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #5e7793;
+}
+
+.cals_container {
+  padding-top: 2px;
+}
+
+.calls_icon {
+  position: relative;
+  margin-right: 8px;
+  top: 2px;
+  left: -2px;
+}
+
+.mail_container {
+  margin-top: -9px;
+}
+
+.calls_icon :hover,
+:active,
+.mail_icon :hover,
+:active {
+  fill: #adbfdf;
+}
+
+.mail_icon {
+  position: relative;
+  margin-right: 8px;
+  top: 4px;
+  left: -1px;
+}
+
+.line {
+  margin-top: -1px;
+  width: 302px;
+
+  border: 0.5px solid #eaf0fa;
+}
+
+.ul {
+  padding-top: 1px;
+  margin-bottom: -8px;
+}
+
+.ul:last-child {
+  margin-bottom: 30px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.list > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.hovered {
+  position: absolute;
+  left: -32px;
+
+  width: 366px;
+  height: 48px;
+
+  cursor: pointer;
+}
+
+.hovered:hover {
+  background: #005ff8;
+  opacity: 0.13;
+  z-index: 1;
+}
+
+.li_text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+
+  color: #005ff8;
+
+  padding-left: 12px;
+}
+
+.login {
+  position: absolute;
+  display: none;
+  right: 0px;
+  fill: #0000f4;
+  cursor: pointer;
+}
+
+.hovered:hover,
+.login:hover ~ .li_text {
+  color: #0000f4;
+}
+
+.hovered:hover ~ .login {
+  display: block;
+}
+
+.small_avatar {
+  z-index: 1;
+}

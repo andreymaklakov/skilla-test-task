@@ -1,0 +1,80 @@
+.logo {
+  position: relative;
+  left: 12px;
+  top: 20px;
+}
+
+.blue_btn {
+  position: absolute;
+  width: 200px;
+  height: 52px;
+  left: 20px;
+
+  border: none;
+  cursor: pointer;
+
+  background: #005ff8;
+  border-radius: 4px;
+}
+
+.blue_btn:hover {
+  background: #0000f4;
+}
+
+.blue_btn:active {
+  background: #274bc8;
+}
+
+.add_order_btn {
+  top: 664px;
+}
+
+.payment_btn {
+  top: 748px;
+}
+
+.btn_text {
+  position: absolute;
+  height: 24px;
+  top: 13px;
+
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.add_btn_text {
+  width: 115px;
+  left: 24px;
+}
+
+.pay_btn_text {
+  width: 54px;
+  left: 65px;
+}
+
+.add_btn_icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 156px;
+  top: 14px;
+}
+
+.pay_btn_icon_wrapper {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 150px;
+  top: 11px;
+}
+
+.pay_btn_icon {
+  position: absolute;
+  right: 2.5px;
+  top: 1.5px;
+}
