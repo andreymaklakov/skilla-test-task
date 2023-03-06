@@ -61,7 +61,9 @@ const FilterBar = () => {
             </button>
           </SvgBtnWrapper>
 
-          {inputIsOpen && <Input onClose={handleCloseInput} />}
+          <div className={styles.input}>
+            {inputIsOpen && <Input onClose={handleCloseInput} />}
+          </div>
         </div>
 
         <div className={styles.filters_container}>

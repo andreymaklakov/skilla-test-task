@@ -50,25 +50,33 @@ a {
 }
 
 main {
-  min-width: 1920px;
+  display: flex;
+  min-width: 1500px;
+
+  min-height: 100vh;
 
   background: #f1f4f9;
   background-attachment: fixed;
 }
 
+main > div {
+  width: 100%;
+}
+
 section {
-  position: absolute;
+  margin: 0 auto;
 
-  width: 1440px;
-  left: 360px;
-  top: 64px;
+  max-width: 1440px;
 
+  padding-left: 3vw;
+  padding-right: 3vw;
   padding-bottom: 100px;
 }
 
 aside {
-  width: 240px;
-  height: 2800px;
+  max-width: 240px;
+  width: 12%;
+  min-width: 180px;
 
   background: #091336;
   background-attachment: fixed;

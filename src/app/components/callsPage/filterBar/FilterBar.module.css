@@ -114,3 +114,8 @@
   margin-left: 7px;
   padding: 2.5px;
 }
+
+.input {
+  position: relative;
+  top: -18px;
+}

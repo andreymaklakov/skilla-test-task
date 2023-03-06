@@ -1,20 +1,31 @@
 header {
-  position: absolute;
-  width: 1680px;
+  position: relative;
+
   height: 64px;
-  left: 240px;
-  top: 0px;
 
   background: #ffffff;
   z-index: 2;
   box-shadow: 0px 4px 5px #e9edf3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left_part {
+  display: flex;
+  align-items: center;
+}
+
+.right_part {
+  display: flex;
+  align-items: center;
 }
 
 .date {
-  position: absolute;
   height: 22px;
-  left: 120px;
-  top: 21px;
+
+  margin-left: 5vw;
 
   font-family: "SF Pro Display";
   font-style: normal;
@@ -26,19 +37,27 @@ header {
   align-items: flex-end;
 
   color: #899cb1;
+
+  white-space: nowrap;
+}
+
+.search {
+  position: relative;
+  top: 2px;
 }
 
 .name_container {
-  position: absolute;
   width: 262px;
   height: 21px;
-  left: 1166px;
-  top: 22px;
+
+  margin-left: 3vw;
 
   display: flex;
   align-items: flex-end;
   text-align: right;
   justify-content: flex-end;
+
+  white-space: nowrap;
 }
 
 .name {
@@ -58,32 +77,29 @@ header {
 }
 
 .arrow {
-  position: absolute;
-  top: 0px;
+  position: relative;
+
+  top: 10px;
 }
 
 .name_arrow_btn :active {
   fill: #002b8c;
 }
 
-.avatar_arrow_wrapper {
-  position: absolute;
-  right: 16px;
-  top: 17px;
-}
-
 .avatar {
-  position: absolute;
-  left: 0.5px;
-  top: 0px;
-
   border-radius: 50px;
+
+  margin-right: 10px;
 }
 
 .avatar_btn {
-  position: absolute;
+  position: relative;
+
+  margin-right: 1vw;
   width: 68px;
   height: 40px;
-  left: 1497px;
-  bottom: 12px;
+
+  margin-left: 3vw;
+
+  display: flex;
 }

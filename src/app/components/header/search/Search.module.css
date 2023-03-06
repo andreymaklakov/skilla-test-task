@@ -1,11 +1,3 @@
 .search_btn {
-  position: absolute;
-  left: 1087px;
-  top: 8px;
-
   cursor: pointer;
-}
-
-.search_icon {
-  position: absolute;
 }

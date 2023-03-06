@@ -11,13 +11,16 @@ function App() {
     <WindowWrapper>
       <Page>
         <SideBar />
-        <Header />
 
-        <AppLoader>
-          <Routes>
-            <Route path="/calls" element={<CallsPage />} />
-          </Routes>
-        </AppLoader>
+        <div>
+          <Header />
+
+          <AppLoader>
+            <Routes>
+              <Route path="/calls" element={<CallsPage />} />
+            </Routes>
+          </AppLoader>
+        </div>
       </Page>
     </WindowWrapper>
   );

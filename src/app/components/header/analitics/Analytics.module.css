@@ -3,13 +3,16 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 56px;
 
-  position: absolute;
+  gap: 3vw;
+
+  position: relative;
+
   width: 594px;
   height: 34px;
-  left: 296px;
-  top: 14px;
+
+  margin-left: 4.5vw;
+  bottom: 2px;
 }
 
 .analytics_item {
@@ -32,7 +35,6 @@
 }
 
 .analytics_text {
-  position: absolute;
   height: 21px;
 
   font-family: "SF Pro Display";
@@ -45,18 +47,6 @@
   align-items: flex-end;
 
   color: #122945;
-}
-
-.analytics_text_1 {
-  left: 0px;
-}
-
-.analytics_text_2 {
-  left: 218px;
-}
-
-.analytics_text_3 {
-  left: 438px;
 }
 
 .analytics_text_green {
@@ -72,54 +62,41 @@
 }
 
 .bar {
-  position: absolute;
+  position: relative;
+  height: 6px;
 
-  top: 28px;
-  bottom: 0px;
+  top: 7px;
+
   z-index: 1;
 
   border-radius: 12px 0px 0px 12px;
 }
 
 .green_bar {
-  left: 0px;
-  right: 526px;
+  width: 100px;
+
   background: #28a879;
 }
 
 .yellow_bar {
-  left: 218px;
-  right: 309px;
+  width: 70px;
+
   background: #ffd500;
 }
 
 .red_bar {
-  left: 438px;
-  right: 78px;
+  width: 100px;
+
   background: #ea1a4f;
 }
 
 .bar_empty {
-  position: absolute;
+  position: relative;
 
-  top: 28px;
-  bottom: 0px;
+  height: 6px;
+
+  top: 1px;
 
   background: #dee6f5;
   border-radius: 12px;
-}
-
-.green_bar_empty {
-  left: 0px;
-  right: 438px;
-}
-
-.yellow_bar_empty {
-  left: 218px;
-  right: 220px;
-}
-
-.red_bar_empty {
-  left: 438px;
-  right: 0px;
 }

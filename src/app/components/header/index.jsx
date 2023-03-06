@@ -25,49 +25,55 @@ const Header = () => {
 
   return (
     <header>
-      <span className={styles.date}>{todayDate()}</span>
+      <div className={styles.left_part}>
+        <span className={styles.date}>{todayDate()}</span>
 
-      <Analytics />
+        <Analytics />
+      </div>
 
-      <Search
-        inputIsOpen={inputIsOpen}
-        onOpen={handleOpenInput}
-        onClose={handleCloseInput}
-      />
+      <div className={styles.right_part}>
+        <div className={styles.search}>
+          <Search
+            inputIsOpen={inputIsOpen}
+            onOpen={handleOpenInput}
+            onClose={handleCloseInput}
+          />
+        </div>
 
-      <div className={styles.name_container}>
-        <span className={styles.name}>ИП Сидорова Александра Михайловна</span>
+        <div className={styles.name_container}>
+          <span className={styles.name}>ИП Сидорова Александра Михайловна</span>
+
+          <SvgBtnWrapper>
+            <button className={styles.name_arrow_btn}>
+              <ArrowDown className={styles.arrow} />
+            </button>
+          </SvgBtnWrapper>
+        </div>
 
         <SvgBtnWrapper>
-          <button className={styles.name_arrow_btn}>
-            <ArrowDown className={styles.arrow} />
+          <button
+            className={styles.avatar_btn}
+            onClick={() => {
+              setInputIsOpen(false);
+              setProfileIsOpen((prevState) => !prevState);
+            }}
+          >
+            <img
+              src={require("./icons/avatar/avatar.png")}
+              alt="avatar"
+              className={styles.avatar}
+            />
+
+            <div className={styles.avatar_arrow_wrapper}>
+              {!profileIsOpen ? (
+                <ArrowDown className={styles.arrow} />
+              ) : (
+                <ArrowUp className={styles.arrow} />
+              )}
+            </div>
           </button>
         </SvgBtnWrapper>
       </div>
-
-      <SvgBtnWrapper>
-        <button
-          className={styles.avatar_btn}
-          onClick={() => {
-            setInputIsOpen(false);
-            setProfileIsOpen((prevState) => !prevState);
-          }}
-        >
-          <img
-            src={require("./icons/avatar/avatar.png")}
-            alt="avatar"
-            className={styles.avatar}
-          />
-
-          <div className={styles.avatar_arrow_wrapper}>
-            {!profileIsOpen ? (
-              <ArrowDown className={styles.arrow} />
-            ) : (
-              <ArrowUp className={styles.arrow} />
-            )}
-          </div>
-        </button>
-      </SvgBtnWrapper>
 
       <Profile profileIsOpen={profileIsOpen} />
     </header>

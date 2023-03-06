@@ -5,16 +5,23 @@
 }
 
 .blue_btn {
-  position: absolute;
-  width: 200px;
+  max-width: 200px;
   height: 52px;
-  left: 20px;
+  width: 83%;
+
+  margin: 0 auto;
 
   border: none;
   cursor: pointer;
 
   background: #005ff8;
   border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  white-space: nowrap;
 }
 
 .blue_btn:hover {
@@ -26,17 +33,15 @@
 }
 
 .add_order_btn {
-  top: 664px;
+  margin-top: 112px;
 }
 
 .payment_btn {
-  top: 748px;
+  margin-top: 32px;
 }
 
 .btn_text {
-  position: absolute;
   height: 24px;
-  top: 13px;
 
   font-family: "SF Pro Display";
   font-style: normal;
@@ -48,33 +53,24 @@
 }
 
 .add_btn_text {
-  width: 115px;
-  left: 24px;
+  margin-right: 10px;
 }
 
 .pay_btn_text {
-  width: 54px;
-  left: 65px;
+  margin-right: 20px;
 }
 
 .add_btn_icon {
-  position: absolute;
   width: 24px;
   height: 24px;
-  left: 156px;
-  top: 14px;
 }
 
 .pay_btn_icon_wrapper {
-  position: absolute;
   width: 30px;
   height: 30px;
-  left: 150px;
-  top: 11px;
 }
 
 .pay_btn_icon {
-  position: absolute;
-  right: 2.5px;
-  top: 1.5px;
+  position: relative;
+  top: 2px;
 }

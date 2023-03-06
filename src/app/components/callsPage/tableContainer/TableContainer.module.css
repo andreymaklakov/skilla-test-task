@@ -8,6 +8,10 @@
 
   top: 47px;
 
+  max-width: 1440px;
+
+  width: 100%;
+
   padding-left: 40px;
   padding-top: 3px;
 }
@@ -24,6 +28,7 @@ table {
   font-weight: 400;
 
   padding-bottom: 56px;
+  width: 100%;
 }
 
 th {
@@ -40,11 +45,12 @@ th {
 tr {
   display: flex;
   gap: 17px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 thead {
   position: relative;
-  /* border-bottom: 1px solid #eaf0fa; */
 
   padding-bottom: 21px;
   padding-top: 21px;
@@ -52,6 +58,7 @@ thead {
   left: -2px;
 
   right: 0px;
+  width: 100%;
 }
 
 tbody {
@@ -63,6 +70,8 @@ tbody {
   color: #122945;
 
   right: 0px;
+
+  width: 100%;
 }
 
 tr:nth-child(n) {
@@ -79,10 +88,14 @@ tr:nth-child(n) {
   width: 111px;
 }
 .call {
-  width: 309px;
+  max-width: 309px;
+  min-width: 100px;
+  width: fit-content;
 }
 .source {
-  width: 197px;
+  min-width: 120px;
+  width: fit-content;
+  max-width: 192px;
 }
 .mark {
   width: 181px;
@@ -213,8 +226,11 @@ audio::-webkit-media-controls-play-button {
   align-items: center;
   width: 32px;
   height: 32px;
-  background-color: #fff;
+  background-image: url("./icons/audio/play.png");
+  background-size: cover;
   border-radius: 50%;
+  order: 3;
+  margin-left: 10px;
 }
 
 audio::-webkit-media-controls-play-button::before {
@@ -229,21 +245,25 @@ audio::-webkit-media-controls-play-button::before {
 
 audio::-webkit-media-controls-timeline-container {
   height: 4px;
-  background-color: #adbfdf;
+  background-image: url("./icons/audio/line.png");
+  background-size: cover;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+}
+
+audio::-webkit-media-controls-timeline {
+  order: 3;
+}
+audio::-webkit-media-controls-download-button {
+  order: 4;
+}
+audio::-webkit-media-controls-enclosure {
+  order: 5;
 }
 
 audio::-webkit-media-controls-timeline-progress-bar {
   background-color: #005ff8;
 }
 
-audio::-webkit-media-controls-current-time-display {
-  display: none;
-}
 audio::-webkit-media-controls-time-remaining-display:before {
   content: "";
 }
@@ -258,20 +278,16 @@ audio::-webkit-media-controls-time-remaining-display {
   text-align: right;
 
   color: #122945;
+  order: 1;
 }
 
 audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-mute-button-container,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-speed-selector,
+audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-toggle-closed-captions-button {
-  display: none;
-}
-audio::-webkit-media-controls-volume-slider-container {
-  display: none;
-}
-audio::-webkit-media-controls-volume-slider {
-  display: none;
-}
-
-audio::-webkit-media-controls-speed-selector {
   display: none;
 }
 
