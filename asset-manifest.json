@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/skilla-test-task/static/css/main.22c51b23.css",
+    "main.js": "/skilla-test-task/static/js/main.4d9c31b3.js",
+    "static/js/787.a673ac92.chunk.js": "/skilla-test-task/static/js/787.a673ac92.chunk.js",
+    "static/media/SF-Pro-Display-Medium.woff": "/skilla-test-task/static/media/SF-Pro-Display-Medium.7ff35c82f5b24bc69ad0.woff",
+    "static/media/SF-Pro-Display-Regular.woff": "/skilla-test-task/static/media/SF-Pro-Display-Regular.800b8a27efcff5b8ab4b.woff",
+    "static/media/logo.svg": "/skilla-test-task/static/media/logo.c02089f1b3fda3c36d900ed693700252.svg",
+    "static/media/date.svg": "/skilla-test-task/static/media/date.eb78b50e893b8be620acb75b0a7dfdf0.svg",
+    "static/media/calls.svg": "/skilla-test-task/static/media/calls.5375befb353292d8fa71d5c2e87eac3c.svg",
+    "static/media/mail.svg": "/skilla-test-task/static/media/mail.2631af71348763c9efa1e90481ca1c21.svg",
+    "static/media/search.svg": "/skilla-test-task/static/media/search.687811afaf032f3ebfef1ea49654d941.svg",
+    "index.html": "/skilla-test-task/index.html",
+    "static/media/login.svg": "/skilla-test-task/static/media/login.e58b927759aedf68cbd727e4624eed48.svg",
+    "static/media/calendar.svg": "/skilla-test-task/static/media/calendar.0946190fab09dbb5d0f9e1c21f22d4a7.svg",
+    "static/media/rightArrow.svg": "/skilla-test-task/static/media/rightArrow.5ead2dee3eb77607f2b61dfe9a64661e.svg",
+    "static/media/leftArrow.svg": "/skilla-test-task/static/media/leftArrow.7695328e4a79d28231dae12ddc6cc882.svg",
+    "static/media/plus.svg": "/skilla-test-task/static/media/plus.e68f9c611aa32d5ea97cb514453f6025.svg",
+    "static/media/outcoming-green.svg": "/skilla-test-task/static/media/outcoming-green.9c194ac5fda39b785f30ab7046146e15.svg",
+    "static/media/logout.svg": "/skilla-test-task/static/media/logout.39c1d3e775556ebe651393c4761fd025.svg",
+    "static/media/close.svg": "/skilla-test-task/static/media/close.a50c91c819ef9971539cbbb713318032.svg",
+    "static/media/incoming-blue.svg": "/skilla-test-task/static/media/incoming-blue.29fbf365dc2f17a3803381ab6c158508.svg",
+    "static/media/arrowDown.svg": "/skilla-test-task/static/media/arrowDown.785b6f7ef662a72882e647c5255951d9.svg",
+    "static/media/arrowUpBlue.svg": "/skilla-test-task/static/media/arrowUpBlue.07844c8ae5d7764d6936b0265d3e8b93.svg",
+    "main.22c51b23.css.map": "/skilla-test-task/static/css/main.22c51b23.css.map",
+    "main.4d9c31b3.js.map": "/skilla-test-task/static/js/main.4d9c31b3.js.map",
+    "787.a673ac92.chunk.js.map": "/skilla-test-task/static/js/787.a673ac92.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22c51b23.css",
+    "static/js/main.4d9c31b3.js"
+  ]
+}
